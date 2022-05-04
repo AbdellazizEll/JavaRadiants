@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.pidev.gui.GestionActualiteController">
+   <children>
+      <Label fx:id="lblIdTournoi" layoutX="82.0" layoutY="67.0" text="Titre" />
+      <Label fx:id="lblHeure" layoutX="76.0" layoutY="132.0" text="Image" />
+      <Label fx:id="lblScore" layoutX="85.0" layoutY="205.0" text="Content" />
+      <TextField fx:id="tfTitre" layoutX="158.0" layoutY="62.0" />
+      <TextField fx:id="tfImage" layoutX="158.0" layoutY="127.0" />
+      <TextField fx:id="tfContent" layoutX="158.0" layoutY="200.0" />
+      <TableView fx:id="TableV" layoutX="97.0" layoutY="277.0" prefHeight="200.0" prefWidth="445.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tcTitre" prefWidth="75.0" text="Titre" />
+            <TableColumn fx:id="tcImage" prefWidth="75.0" text="image" />
+            <TableColumn fx:id="tcContent" prefWidth="75.0" text="content" />
+            
+        </columns>
+      </TableView>
+      <Button fx:id="btnAjouter" layoutX="379.0" layoutY="200.0" mnemonicParsing="false" onAction="#ajouterActualite" text="Ajouter" />
+      <Button fx:id="btnModifier" layoutX="458.0" layoutY="200.0" mnemonicParsing="false" onAction="#modifierActualite" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="549.0" layoutY="200.0" mnemonicParsing="false" onAction="#supprimerActualite" text="Supprimer" />
+      <Button fx:id="btnRefresh" layoutX="568.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#refreshTable" text="Refresh" />
+      <Button fx:id="btnRetour" layoutX="679.0" layoutY="446.0" mnemonicParsing="false" onAction="#retour" text="retour" />
+      <Button layoutX="367.0" layoutY="127.0" mnemonicParsing="false" onAction="#loadIMG" text="Button" />
+      <TextField fx:id="cherch" layoutX="500.0" layoutY="52.0" onKeyPressed="#recherche" />
+   </children>
+</AnchorPane>
