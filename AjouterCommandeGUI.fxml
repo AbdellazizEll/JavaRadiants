@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.AjouterCommandeGUIController">
+   <children>
+      <Label fx:id="lblProduit" layoutX="95.0" layoutY="68.0" text="Produit" />
+      <Label fx:id="lblTotale" layoutX="95.0" layoutY="108.0" text="totale" />
+      <Label fx:id="lblDate" layoutX="95.0" layoutY="156.0" text="Date" />
+      <Label fx:id="lblAdresse" layoutX="95.0" layoutY="201.0" text="Adresse" />
+      <Label fx:id="lblMail" layoutX="95.0" layoutY="243.0" text="Mail" />
+      <TextField fx:id="tfProduit" layoutX="165.0" layoutY="63.0" />
+      <TextField fx:id="tfTotale" layoutX="165.0" layoutY="103.0" />
+      <TextField fx:id="tfAdresse" layoutX="165.0" layoutY="196.0" />
+      <TextField fx:id="tfMail" layoutX="165.0" layoutY="238.0" />
+      <Button fx:id="btnAjout" layoutX="259.0" layoutY="298.0" mnemonicParsing="false" text="Commander" />
+      <DatePicker fx:id="dpDate" layoutX="156.0" layoutY="151.0" />
+   </children>
+</AnchorPane>

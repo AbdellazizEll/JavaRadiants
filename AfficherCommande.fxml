@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.AfficherCommandeController">
+   <children>
+      <Label fx:id="lblProduit" layoutX="325.0" layoutY="68.0" text="Label" />
+      <Label fx:id="lblTotale" layoutX="325.0" layoutY="117.0" text="Label" />
+      <Label fx:id="lblDate" layoutX="325.0" layoutY="166.0" text="Label" />
+      <Label fx:id="lblAdresse" layoutX="325.0" layoutY="214.0" text="Label" />
+      <Label fx:id="lblMail" layoutX="325.0" layoutY="266.0" text="Label" />
+      <Label layoutX="146.0" layoutY="68.0" text="Produit" />
+      <Label layoutX="146.0" layoutY="117.0" text="Totale" />
+      <Label layoutX="146.0" layoutY="166.0" text="Date" />
+      <Label layoutX="146.0" layoutY="214.0" text="Adresse" />
+      <Label layoutX="146.0" layoutY="266.0" text="Mail" />
+   </children>
+</AnchorPane>

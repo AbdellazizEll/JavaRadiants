@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="755.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.AjouterInscriGUIController">
+   <children>
+      <Label fx:id="lblIdTournoi" layoutX="103.0" layoutY="90.0" text="Id Tournoi" />
+      <TextField fx:id="tfIdtournoi" layoutX="222.0" layoutY="85.0" />
+      <Button fx:id="btnAjout" layoutX="448.0" layoutY="447.0" mnemonicParsing="false" onAction="#AjouterInscription" prefHeight="38.0" prefWidth="171.0" text="S'inscrire au Tournoi" />
+      <Label fx:id="lblNomComplet" layoutX="90.0" layoutY="152.0" text="Nom Complet" />
+      <TextField fx:id="tfNomcomplet" layoutX="222.0" layoutY="147.0" />
+      <TextField fx:id="tfNomequipe" layoutX="222.0" layoutY="201.0" />
+      <TextField fx:id="tfNombrejoueur" layoutX="222.0" layoutY="258.0" />
+      <TextField fx:id="tfNomjoueur1" layoutX="743.0" layoutY="85.0" />
+      <Label fx:id="lblNomEquipe" layoutX="88.0" layoutY="206.0" text="Nom Equipe" />
+      <Label fx:id="lblNombrejoueur" layoutX="90.0" layoutY="263.0" text="Nombre Joueurs" />
+      <Label fx:id="lblNomjoueur1" layoutX="624.0" layoutY="90.0" text="Nom Joueur1" />
+      <TextField fx:id="tfNomjoueur2" layoutX="743.0" layoutY="147.0" />
+      <TextField fx:id="tfNomjoueur3" layoutX="743.0" layoutY="201.0" />
+      <TextField fx:id="tfNomjoueur4" layoutX="743.0" layoutY="269.0" />
+      <TextField fx:id="tfNomjoueur5" layoutX="743.0" layoutY="333.0" />
+      <TextField fx:id="tfEmail" layoutX="222.0" layoutY="317.0" />
+      <Label fx:id="lblNomjoueur2" layoutX="624.0" layoutY="152.0" text="Nom Joueur2" />
+      <Label fx:id="lblNomjoueur3" layoutX="624.0" layoutY="206.0" text="Nom Joueur3" />
+      <Label fx:id="lblNomjoueur4" layoutX="624.0" layoutY="274.0" text="Nom Joueur 4" />
+      <Label fx:id="lblEmail" layoutX="120.0" layoutY="323.0" text="E-mail" />
+      <Label fx:id="lblNomjoueur5" layoutX="624.0" layoutY="338.0" text="Nom Joueur5" />
+   </children>
+</AnchorPane>

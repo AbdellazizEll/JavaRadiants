@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.AfficherInscriptionController">
+   <children>
+      <Label layoutX="75.0" layoutY="62.0" text="Nom Tournoi" />
+      <Label layoutX="72.0" layoutY="97.0" text="Nom Equipe" />
+      <Label fx:id="lblNomTournoi" layoutX="329.0" layoutY="62.0" text="Label" />
+      <Label fx:id="lblNomequipe" layoutX="329.0" layoutY="97.0" text="Label" />
+      <Label layoutX="72.0" layoutY="128.0" text="Nom Complet" />
+      <Label fx:id="lblNomComplet" layoutX="329.0" layoutY="128.0" text="Label" />
+      <Label layoutX="75.0" layoutY="185.0" prefHeight="30.0" prefWidth="110.0" text="Nombre Joueurs" />
+      <Label fx:id="lblNombrejoueur" layoutX="329.0" layoutY="190.0" text="Label" />
+      <Label layoutX="74.0" layoutY="157.0" text="Email" />
+      <Label fx:id="lblEmail" layoutX="329.0" layoutY="157.0" text="Label" />
+      <Label fx:id="lblNomjoueur3" layoutX="329.0" layoutY="283.0" text="Label" />
+      <Label layoutX="75.0" layoutY="220.0" text="Nom Joueur1" />
+      <Label fx:id="lblNomjoueur2" layoutX="329.0" layoutY="252.0" text="Label" />
+       <Label layoutX="75.0" layoutY="252.0" text="Nom Joueur2" />
+      <Label fx:id="lblNomjoueur1" layoutX="329.0" layoutY="220.0" text="Label" />
+       <Label layoutX="74.0" layoutY="283.0" text="Nom Joueur3" />
+      <Label fx:id="lblNomjoueur5" layoutX="329.0" layoutY="337.0" text="Label" />
+       <Label layoutX="74.0" layoutY="310.0" text="Nom Joueur4" />
+      <Label fx:id="lblNomjoueur4" layoutX="329.0" layoutY="310.0" text="Label" />
+       <Label layoutX="74.0" layoutY="337.0" text="Nom Joueur5" />
+      
+   </children>
+</AnchorPane>

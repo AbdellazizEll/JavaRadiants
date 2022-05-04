@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="669.0" prefWidth="1046.0" styleClass="background" stylesheets="@../tools/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.GestionPostController">
+   <children>
+      <Label fx:id="lblUser" layoutX="62.0" layoutY="42.0" text="User" />
+      <Label fx:id="lblTitre" layoutX="62.0" layoutY="77.0" text="Titre" />
+      <Label fx:id="lblContent" layoutX="677.0" layoutY="27.0" text="Contenu" />
+      <Label fx:id="lblImage" layoutX="62.0" layoutY="130.0" text="Image" />
+      <Label fx:id="lblCreatedAt" layoutX="57.0" layoutY="179.0" text="Created At" />
+      <TextField fx:id="tfUser" layoutX="139.0" layoutY="37.0" />
+      <TextField fx:id="tfTitre" layoutX="139.0" layoutY="80.0" />
+      <TextArea fx:id="taContent" layoutX="706.0" layoutY="57.0" prefHeight="234.0" prefWidth="238.0" />
+      <TextField fx:id="tfImage" layoutX="139.0" layoutY="125.0" />
+      <DatePicker fx:id="tfCreatedAt" layoutX="139.0" layoutY="171.0" />
+      <Button fx:id="btnAjout" layoutX="405.0" layoutY="304.0" mnemonicParsing="false" onAction="#ajouterPost" prefHeight="33.0" prefWidth="104.0" text="Ajouter" />
+      <Button fx:id="btnModifier" layoutX="523.0" layoutY="304.0" mnemonicParsing="false" onAction="#modifierPost" prefHeight="33.0" prefWidth="116.0" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="655.0" layoutY="304.0" mnemonicParsing="false" onAction="#supprimerPost" text="Supprimer" />
+      
+      <Button fx:id="btnRetour" layoutX="934.0" layoutY="607.0" mnemonicParsing="false" onAction="#retour" prefHeight="33.0" prefWidth="98.0" text="Retour" />
+      <Button layoutX="367.0" layoutY="128.0" mnemonicParsing="false" onAction="#loadIMG" text="upload" />
+      <HBox layoutX="101.0" layoutY="426.0" prefHeight="214.0" prefWidth="626.0">
+         <children>
+            <TableView fx:id="tableV" prefHeight="214.0" prefWidth="740.0">
+              <columns>
+                <TableColumn fx:id="tcUser" prefWidth="75.0" text="User" />
+                <TableColumn fx:id="tcTitre" prefWidth="117.0" text="Titre" />
+                  <TableColumn fx:id="tcContenu" prefWidth="147.0" text="Contenu" />
+                  <TableColumn fx:id="tcImage" prefWidth="138.0" text="Image" />
+                  <TableColumn fx:id="tcCreatedAt" prefWidth="144.0" text="Created At" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button fx:id="btntri" layoutX="807.0" layoutY="518.0" mnemonicParsing="false" onAction="#tri" text="Trier" />
+   </children>
+</AnchorPane>

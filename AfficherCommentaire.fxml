@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.AfficherCommentaireController">
+   <children>
+      <Label fx:id="lblUser" layoutX="328.0" layoutY="64.0" text="Label" />
+      <Label fx:id="lblPost" layoutX="328.0" layoutY="109.0" text="Label" />
+      <Label fx:id="lblContent" layoutX="328.0" layoutY="151.0" text="Label" />
+      <Label fx:id="lblImage" layoutX="328.0" layoutY="196.0" text="Label" />
+      <Label fx:id="lblCreatedAt" layoutX="328.0" layoutY="240.0" text="Label" />
+      <Label layoutX="164.0" layoutY="64.0" text="User" />
+      <Label layoutX="164.0" layoutY="109.0" text="Post" />
+      <Label layoutX="164.0" layoutY="151.0" text="Content" />
+      <Label layoutX="164.0" layoutY="196.0" text="Image" />
+      <Label layoutX="164.0" layoutY="240.0" text="Created At" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="883.0" styleClass="background" stylesheets="@../tools/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.clutchers.GUI.InscriptionFrontController">
+   <children>
+      <Label fx:id="lblTournoi" layoutX="57.0" layoutY="132.0" text="Torunoi" />
+      <Label fx:id="lblNomComplet" layoutX="57.0" layoutY="178.0" text="Nom Complet" />
+      <Label fx:id="lblNomEquipe" layoutX="57.0" layoutY="227.0" text="Nom Equipe" />
+      <Label fx:id="lblNbreJoueurs" layoutX="57.0" layoutY="274.0" text="Nombre Joueurs" />
+      <Label fx:id="lblmail" layoutX="57.0" layoutY="318.0" text="E-mail" />
+      <Label fx:id="lblNom5" layoutX="462.0" layoutY="318.0" text="Nom Joueur5" />
+      <Label fx:id="lblNom1" layoutX="462.0" layoutY="132.0" text="Nom Joueur1" />
+      <Label fx:id="lblNom2" layoutX="462.0" layoutY="178.0" text="Nom Joueur2" />
+      <Label fx:id="lblNom3" layoutX="462.0" layoutY="227.0" text="Nom Joueur3" />
+      <Label fx:id="lblNom4" layoutX="462.0" layoutY="274.0" text="Nom Joueur4" />
+      <TextField fx:id="tfTournoi" layoutX="179.0" layoutY="127.0" />
+      <TextField fx:id="tfNomComplet" layoutX="179.0" layoutY="173.0" />
+      <TextField fx:id="tfNomEquipe" layoutX="179.0" layoutY="222.0" />
+      <TextField fx:id="tfNbreJoueurs" layoutX="179.0" layoutY="269.0" />
+      <TextField fx:id="tfMail" layoutX="179.0" layoutY="313.0" />
+      <TextField fx:id="tfNom5" layoutX="561.0" layoutY="313.0" />
+      <TextField fx:id="tfNom1" layoutX="561.0" layoutY="127.0" />
+      <TextField fx:id="tfNom2" layoutX="561.0" layoutY="173.0" />
+      <TextField fx:id="tfNom3" layoutX="561.0" layoutY="222.0" />
+      <TextField fx:id="tfNom4" layoutX="561.0" layoutY="269.0" />
+      <Button fx:id="btnAjout" layoutX="622.0" layoutY="426.0" mnemonicParsing="false" onAction="#ajouterInscription" text="S'inscrire" />
+      <Button fx:id="btnRetour" layoutX="761.0" layoutY="530.0" mnemonicParsing="false" text="retour" />
+   </children>
+</AnchorPane>
