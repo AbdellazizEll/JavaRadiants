@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="home" prefHeight="568.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workshopjdbc.gui.AcceuilBackController">
+   <children>
+      <AnchorPane fx:id="navbarbg" layoutX="187.0" layoutY="106.0" prefHeight="492.0" prefWidth="116.0" style="-fx-background-color: linear-gradient(to right top, #1a1920, #1d1d28, #21212f, #232538, #252940, #242a46, #232c4c, #222d52, #1e2b57, #1b295b, #172760, #132564);; -fx-border-radius: 3em; -fx-border-color: #C4EC27; -fx-background-radius: 3em;">
+         <children>
+            <ImageView fx:id="livreuricon1" fitHeight="40.0" fitWidth="34.0" layoutX="32.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/iconsDeliveryYellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="debouicon1" fitHeight="34.0" fitWidth="34.0" layoutX="32.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/saif2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="employeeicon1" fitHeight="40.0" fitWidth="34.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/e2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="employeeicon" fitHeight="40.0" fitWidth="34.0" layoutX="38.0" layoutY="26.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/icons8-modifier-l'utilisateur-homme-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="debouicon" fitHeight="34.0" fitWidth="34.0" layoutX="38.0" layoutY="87.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/saif1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exitIcon" fitHeight="34.0" fitWidth="34.0" layoutX="37.0" layoutY="415.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8-fermer-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="livreuricon" fitHeight="40.0" fitWidth="34.0" layoutX="38.0" layoutY="284.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/IconDeliveryGris.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fouricon1" fitHeight="40.0" fitWidth="34.0" layoutX="32.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/ramzi2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="fourricon" fitHeight="40.0" fitWidth="34.0" layoutX="38.0" layoutY="352.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/ramzi1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="paniericon1" fitHeight="40.0" fitWidth="34.0" layoutX="33.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/icons8-caddie-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="paniericon" fitHeight="40.0" fitWidth="34.0" layoutX="39.0" layoutY="158.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/icons8-caddie-48%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="produiticon1" fitHeight="40.0" fitWidth="34.0" layoutX="33.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/louayBoxYellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="produiticon" fitHeight="40.0" fitWidth="34.0" layoutX="39.0" layoutY="216.0" onMouseEntered="#light" onMouseExited="#unlight" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+               <image>
+                  <Image url="@../../images/louayBox.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Polygon fx:id="e2" layoutX="137.0" layoutY="199.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="e1" alignment="CENTER" layoutX="43.0" layoutY="132.0" prefHeight="38.0" prefWidth="106.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Profil">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fx:id="d2" layoutX="137.0" layoutY="257.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="d1" alignment="CENTER" layoutX="43.0" layoutY="190.0" prefHeight="38.0" prefWidth="106.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Articles">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fx:id="c2" layoutX="137.0" layoutY="328.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="c145" alignment="CENTER" layoutX="25.0" layoutY="261.0" prefHeight="38.0" prefWidth="124.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Shop">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fx:id="p2" layoutX="137.0" layoutY="388.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="p1" alignment="CENTER" layoutX="43.0" layoutY="321.0" prefHeight="38.0" prefWidth="106.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Jeux">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fx:id="l2" layoutX="137.0" layoutY="455.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="l1" alignment="CENTER" layoutX="43.0" layoutY="388.0" prefHeight="38.0" prefWidth="106.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Equipes">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fx:id="f2" layoutX="137.0" layoutY="525.0" points="39.19999694824219, -36.399993896484375, 39.19999694824219, -58.0, 12.400009155273438, -47.79998779296875" smooth="false" strokeDashOffset="2.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2f2f87" offset="0.6505960472655024" />
+                  <Stop color="#4f72f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.2557251908396946" endY="0.6450381515590289" startX="0.9618320992884746">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4b6ad7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Label fx:id="f1" alignment="CENTER" layoutX="8.0" layoutY="458.0" prefHeight="38.0" prefWidth="141.0" style="-fx-effect: dropshadow(two-pass-box, black,15,0.0,0.5,3);" text="Tournois">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.20229010909568262" endY="0.48473283807739953" startX="0.5076336023461727">
+               <stops>
+                  <Stop color="#2c68ea" />
+                  <Stop color="#2c68ea" offset="0.007633587786259542" />
+                  <Stop color="#25489a" offset="0.648112856245405" />
+                  <Stop color="#4873ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

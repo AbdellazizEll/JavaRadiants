@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="-1" />
+        <title>Accés Internet sans fil</title>
+        <script src="http://cdn.omniup.com:81/assets/jquery/jquery-1.11.0.min.js"></script>
+        <script src="http://cdn.omniup.com:81/assets/mediaelement/mediaelement-and-player.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.omniup.com:81/assets/mediaelement/mediaelementplayer.min.css" />
+        <link rel="stylesheet" href="http://cdn.omniup.com:81/assets/css/style.css" />
+        <link rel="stylesheet" href="css/override.css" />
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+           <script src="http://cdn.omniup.com:81/assets/js/html5.js"></script>
+        <![endif]-->
+        <script>
+            $(document).ready(function () {
+                var Redirect = function () {
+                    var url_redirect = 'http://cdn.omniup.com:3990/login/?ads=f9b5729a25121b7465be2458162a6d69&control=1005648870894776&token=c2524ef5&cna=0&redir=https%3A%2F%2F2f35a2a3.sibforms.com%2Fserve%2FMUIEADrKRF_m7z3EPkkhIH1TcC8k8ManUu9gGEX5DybdfzQrLda1QfKX-yNYpi-XL84l2dahQh2_juBIXx0ZnN7-bXBgcUjVlbpGW9neRPbEdPsRuyVnw8I6w8AJwyCw3MyIlBHj259blcIHq8FRIYzhua09D_R9XhNyq3PZKuxDWqQha22iCDmirfQh0wQGqcbdT93E7BkWGo8v';
+                    document.location.href = url_redirect;
+                };
+                var player = new MediaElementPlayer("#ads", { features: [], iPadUseNativeControls: false, iPhoneUseNativeControls: false, AndroidUseNativeControls: false, success: function (e, t) {
+					
+					    e.addEventListener("ended", function (e) {
+                            Redirect()
+                        }, false);
+                        e.addEventListener('seeking', function(e) {   
+                        	if(e.target.currentTime > 1) {
+                        		player.setCurrentTime(0);
+                        		player.play();
+                        	}
+
+					}, true);
+                    }});
+                $("#ads").on("play", function () {
+                    player.enterFullScreen();
+                })
+            });
+        </script>
+    </head>
+    <body style="background-color: rgb(0, 0, 0) !important;">
+        <div id="mini-container">   
+            <div id="mini-header">
+                <img src="http://cdn.omniup.com:81/videos/f9b5729a25121b7465be2458162a6d69/logo.png" alt="Omniup Advertising" style="width:100%;max-width:300px"/>
+            </div>
+                        <div id="video_container">
+                <video id="ads" style="width:100%;height:100%;" width="100%" height="100%" controls="controls" preload="none">
+                    <source type="video/mp4" src="http://cdn.omniup.com:81/videos/f9b5729a25121b7465be2458162a6d69/pub.mp4" />
+                    <source type="video/webm" src="http://cdn.omniup.com:81/videos/f9b5729a25121b7465be2458162a6d69/pub.webm" />
+                    <source type="video/ogg" src="http://cdn.omniup.com:81/videos/f9b5729a25121b7465be2458162a6d69/pub.ogv" />
+                    <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                    <object width="100%" height="100%" type="application/x-shockwave-flash" data="http://cdn.omniup.com:81/assets/mediaelement/flashmediaelement.swf">
+                        <param name="movie" value="http://cdn.omniup.com:81/assets/mediaelement/flashmediaelement.swf" />
+                        <param name="flashvars" value="controls=true&file=http://cdn.omniup.com:81/videos/f9b5729a25121b7465be2458162a6d69/pub.mp4" />
+                    </object>
+                </video>
+            </div>                       
+            <div id="mini-footer" style="color: rgb(255, 255, 255) !important;">
+                <hr /> 
+                <small>Omniup Ads<em>&reg</em> - Omni Up, All rights reserved.</small><br/> <small class=""><a target="_blank" style="color: rgb(255, 255, 255) !important;" href="http://wp.omniup.com/terms.php?id=">By clicking, you confirm that you have read and accepted the terms and conditions</a></small>               
+            </div>             
+        </div>        
+    </body>
+</html>
