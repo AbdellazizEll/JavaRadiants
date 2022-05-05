@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="1105.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.Clutchers.GUI.SendMailController">
+   <children>
+      <VBox layoutX="294.0" layoutY="147.0" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+         <children>
+            <Label text="Send to" />
+            <Label text="Send from" />
+            <Label text="Password" />
+            <Label text="Subject" />
+            <Label text="Message" />
+         </children>
+      </VBox>
+      <Label layoutX="82.0" layoutY="63.0" text="Envoyer mail" />
+      <TextField fx:id="emailToField" layoutX="479.0" layoutY="143.0" prefHeight="37.0" prefWidth="324.0" />
+      <TextField fx:id="emailFromField" layoutX="479.0" layoutY="210.0" prefHeight="37.0" prefWidth="324.0" />
+      <TextField fx:id="emailPasswordField" layoutX="479.0" layoutY="274.0" prefHeight="37.0" prefWidth="324.0" />
+      <TextField fx:id="emailSubject" layoutX="479.0" layoutY="337.0" prefHeight="37.0" prefWidth="324.0" />
+      <TextArea fx:id="emailMessageField" layoutX="479.0" layoutY="410.0" prefHeight="141.0" prefWidth="324.0" />
+      <Button fx:id="btnSend" layoutX="958.0" layoutY="590.0" mnemonicParsing="false" onAction="#SendMail" text="Send" />
+      <Button fx:id="btnRetourM" layoutX="850.0" layoutY="590.0" mnemonicParsing="false" onAction="#Retour" text="Return" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1100.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.Clutchers.GUI.PieChartController">
+   <children>
+      <Label layoutX="32.0" layoutY="21.0" text="Pie chart" />
+      <Pane layoutX="686.0" layoutY="214.0" prefHeight="343.0" prefWidth="371.0" styleClass="background" stylesheets="@DarkTheme.css">
+         <children>
+            <PieChart fx:id="piechart" layoutX="7.0" layoutY="4.0" prefHeight="336.0" prefWidth="371.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="32.0" layoutY="96.0" prefHeight="526.0" prefWidth="599.0">
+         <children>
+            <PieChart fx:id="piechart2" layoutX="14.0" layoutY="14.0" prefHeight="507.0" prefWidth="582.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnRetour" layoutX="953.0" layoutY="585.0" mnemonicParsing="false" onAction="#Retour" text="Retour">
+         <effect>
+            <Reflection />
+         </effect></Button>
+   </children>
+</AnchorPane>
