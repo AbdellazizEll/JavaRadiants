@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="953.0" styleClass="background" stylesheets="@../test/DarkTheme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionEquipeController">
+   <children>
+      <Button fx:id="btnModifier" layoutX="618.0" layoutY="200.0" mnemonicParsing="false" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="613.0" layoutY="240.0" mnemonicParsing="false" text="Supprimer" />
+      <Label fx:id="lblNomEquipe" layoutX="38.0" layoutY="18.0" text="Nom Equipe" />
+      <TextField fx:id="tfNomEquipe" layoutX="145.0" layoutY="14.0" />
+      <Label fx:id="lblDateCreation" layoutX="34.0" layoutY="73.0" text="Date Creation" />
+      <Label fx:id="lblLeague" layoutX="32.0" layoutY="125.0" text="League" />
+      <Label fx:id="lblPays" layoutX="32.0" layoutY="181.0" text="Pays" />
+      <TextField fx:id="tfLeague" layoutX="145.0" layoutY="121.0" />
+      <TextField fx:id="tfPays" layoutX="145.0" layoutY="177.0" />
+      <DatePicker fx:id="dpDateCreation" layoutX="143.0" layoutY="69.0" />
+      <Label fx:id="lblLogo" layoutX="30.0" layoutY="235.0" text="Logo" />
+      <Label fx:id="lblSiteWeb" layoutX="27.0" layoutY="364.0" text="Site Web" />
+      <Label fx:id="lblDescription" layoutX="25.0" layoutY="433.0" text="Description" />
+      <Label fx:id="lblPalmares" layoutX="27.0" layoutY="304.0" text="Palmares" />
+      <TextField fx:id="tfLogo" layoutX="145.0" layoutY="231.0" />
+      <TextField fx:id="tfSiteWeb" layoutX="145.0" layoutY="360.0" />
+      <TextArea fx:id="taDescription" layoutX="145.0" layoutY="416.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="tfPalmares" layoutX="146.0" layoutY="300.0" />
+      <Button fx:id="btnAjouter" layoutX="621.0" layoutY="155.0" mnemonicParsing="false" text="Ajouter" />
+      <Label fx:id="lblRecherche" layoutX="686.0" layoutY="9.0" text="Rechercher" />
+      <TextField fx:id="tfRecherche" layoutX="641.0" layoutY="35.0" />
+      <Button fx:id="btnCancel" layoutX="504.0" layoutY="438.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="btnRefresh" layoutX="406.0" layoutY="438.0" mnemonicParsing="false" text="Refresh" />
+      <Button fx:id="btnRetour" layoutX="887.0" layoutY="23.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+      <ListView fx:id="listV" layoutX="395.0" layoutY="25.0" prefHeight="375.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
