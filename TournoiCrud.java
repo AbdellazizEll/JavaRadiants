@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pidev.services;
+package services;
 
-import pidev.entities.Equipe;
-import pidev.entities.Tournoi;
+import entities.Equipe;
+import entities.Tournoi;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,17 +14,17 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import pidev.utils.DataSource;
+import utils.DataSource;
 
 /**
  *
  * @author MSI I7
  */
-public class TournoiCrud implements IService<Tournoi> {
+public class TournoiCrud implements ServiceTournoi<Tournoi> {
     
     Connection cnx = DataSource.getInstance().getCnx();
     
-    public void ajouter (Tournoi t) {
+    public void ajouterTournoi (Tournoi t) {
         
 
         try {
@@ -43,7 +43,7 @@ public class TournoiCrud implements IService<Tournoi> {
         }
     }
 
-    public void supprimer(int id) {
+    public void supprimerTournoi(int id) {
         try {
             String req = "DELETE FROM `tournoi` WHERE id = " + id;
             Statement st = cnx.createStatement();
@@ -55,9 +55,9 @@ public class TournoiCrud implements IService<Tournoi> {
     }
     
     
-    public void modifier(int id,Tournoi t) {
+    public void modifierTournoi(int id,Tournoi t) {
         try {
-            String req = "UPDATE `tournoi` SET `nom_tournoi` = '" + t.getNomTournoi()+ "', `jeux` = '" + t.getJeux()+ "',`date_debut` = '" + t.getDateDebut()+ "',`date_fin` = '" + t.getDateFin()+ "', `couleur` = '" + t.getCouleur()+  "'  WHERE `id` = " + id;
+            String req = "UPDATE `equipe` SET `nom_tournoi` = '" + t.getNomTournoi()+ "', `jeux` = '" + t.getJeux()+ "',`date_debut` = '" + t.getDateDebut()+ "',`date_fin` = '" + t.getDateFin()+ "', `couleur` = '" + t.getCouleur()+  "'  WHERE `tournoi`.`id` = " + t.getId();
             Statement st = cnx.createStatement();
             st.executeUpdate(req);
             System.out.println("Tournoi updated !");
