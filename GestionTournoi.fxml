@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="626.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionTournoiController">
+   <children>
+      <Label fx:id="lblNomTournoi" layoutX="53.0" layoutY="55.0" text="Nom Tournoi" />
+      <Label fx:id="lblJeux" layoutX="54.0" layoutY="106.0" text="Jeux" />
+      <Label fx:id="lblDateDebut" layoutX="47.0" layoutY="163.0" text="Date Debut" />
+      <Label fx:id="lblDateFin" layoutX="44.0" layoutY="217.0" text="Date Fin" />
+      <Label fx:id="lblCouleur" layoutX="45.0" layoutY="288.0" text="Couleur" />
+      <TextField fx:id="tfNomTournoi" layoutX="169.0" layoutY="51.0" />
+      <TextField fx:id="tfJeux" layoutX="169.0" layoutY="102.0" />
+      <DatePicker fx:id="dpDateDebut" layoutX="169.0" layoutY="159.0" />
+      <DatePicker fx:id="dpDateFin" layoutX="169.0" layoutY="222.0" />
+      <ColorPicker fx:id="cpCouleur" layoutX="169.0" layoutY="284.0" />
+      <TableView fx:id="TableV" layoutX="44.0" layoutY="352.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tcNomTournoi" prefWidth="111.20001220703125" text="Nom Tournoi" />
+            <TableColumn fx:id="tcJeux" prefWidth="92.0" text="Jeux" />
+            <TableColumn fx:id="tcDateDeb" prefWidth="94.4000244140625" text="Date Debut" />
+            <TableColumn fx:id="tcDateFin" prefWidth="100.79998779296875" text="Date Fin" />
+            <TableColumn fx:id="tcCouleur" prefWidth="82.39996337890625" text="Couleur" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAjouter" layoutX="457.0" layoutY="284.0" mnemonicParsing="false" onAction="#ajouterTournoi" text="Ajouter" />
+      <Button fx:id="btnModifier" layoutX="522.0" layoutY="284.0" mnemonicParsing="false" onAction="#modifierTournoi" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="593.0" layoutY="284.0" mnemonicParsing="false" onAction="#supprimerTournoi" text="Supprimer" />
+   </children>
+</AnchorPane>
